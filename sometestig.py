@@ -6,6 +6,13 @@ def decorator(func):
         print("After calling the function.")
     return wrapper
 
+
+
+
+
+
+
+
 @decorator
 def greet():
     print("Hello, world.")
