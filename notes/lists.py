@@ -1,5 +1,6 @@
 # GNB - 1st - Lists Types Notes
 
+#List
 shawties = ["Emmie", "Sophie", "Elijah", "Annie", "Emily", "Isabel"]
 
 print(shawties[0])
