@@ -3,7 +3,7 @@ import csv
 
 while True:
     try:
-        with open("notes/reading_files_notes/reading.txt", "r") as file: #As you can see, it is 
+        with open("notes/reading_files_notes/reading.txt", "r") as file: #As you can see, it is 67 or wtv
             for line in file:
                 print(f"Welcome to {line.strip()}")
            # content = file.read()
