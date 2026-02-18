@@ -1,4 +1,4 @@
-# GNB - Personal Library Program (4 Required Fields Only)
+# GNB - Personal Library Program Update
 
 import csv
 
@@ -6,9 +6,6 @@ DEFAULT_FILE = "library.csv"
 FIELDS = ["title", "creator", "year", "genre"]
 
 
-# --------------------------------------------------
-# LOAD LIBRARY
-# --------------------------------------------------
 def load_library(file_path):
     library = []
 
@@ -35,9 +32,6 @@ def load_library(file_path):
     return library
 
 
-# --------------------------------------------------
-# SAVE LIBRARY
-# --------------------------------------------------
 def save_library(file_path, library):
     with open(file_path, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=FIELDS)
@@ -47,9 +41,6 @@ def save_library(file_path, library):
     print("Library saved.")
 
 
-# --------------------------------------------------
-# DISPLAY FUNCTIONS
-# --------------------------------------------------
 def show_simple(library):
     if not library:
         print("Library is empty.")
@@ -72,9 +63,7 @@ def show_detailed(library):
         print(f"Genre: {item['genre']}")
 
 
-# --------------------------------------------------
-# ADD
-# --------------------------------------------------
+
 def add_item(library):
     print("\nAdd New Item")
 
@@ -100,9 +89,7 @@ def add_item(library):
     print("Item added.")
 
 
-# --------------------------------------------------
-# UPDATE
-# --------------------------------------------------
+
 def update_item(library):
     show_simple(library)
     if not library:
@@ -130,9 +117,7 @@ def update_item(library):
     print("Item updated.")
 
 
-# --------------------------------------------------
-# DELETE
-# --------------------------------------------------
+
 def delete_item(library):
     show_simple(library)
     if not library:
@@ -148,9 +133,6 @@ def delete_item(library):
     print(f"Deleted: {removed['title']}")
 
 
-# --------------------------------------------------
-# MAIN LOOP
-# --------------------------------------------------
 def run_program():
     file_path = input(f"Welcome to the Personal Library Program. \nWhat do you want to name your library? (Enter for {DEFAULT_FILE}): ").strip()
     if not file_path:
@@ -196,7 +178,7 @@ def run_program():
                 save_choice = input("Unsaved changes. Save before exit? (y/n): ").lower()
                 if save_choice == "y":
                     save_library(file_path, library)
-            print("Goodbye.")
+            print("Goodbye. Thanks for using the best Personal Song Library. :o")
             break
         else:
             print("Choose 1-8.")
