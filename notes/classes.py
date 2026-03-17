@@ -31,3 +31,5 @@ class ClassPeriod:
 first = ClassPeriod("Computer Programming 2", "Ms LaRose", room = "200")
 second = ClassPeriod("English 10 Honors", "Ms Jensen", room = "67")
 print(first, second)
+
+#Wassup twin
