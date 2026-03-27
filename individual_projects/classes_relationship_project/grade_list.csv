@@ -1,1 +1,4 @@
-Student_name, Student_id, Student_classes_and_grades
+ID, Name, Number Grade, Letter Grade
+6767, Jared James, 67.67, D
+7676, Major Major, 96.8, A
+4232, Sherry Singh, 88, B
